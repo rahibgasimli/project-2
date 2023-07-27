@@ -266,7 +266,7 @@ header .fa-bars{
     }
 
     .teqdimat-left .button-group{
-        padding-left: 25px;
+        justify-content: center;
     }
 }
 
@@ -538,6 +538,7 @@ background-color:#08101D;
         width: 100%;
         padding: 0;
         text-align: center;
+        margin: 0;
         padding-bottom: 50px;
     }
 
