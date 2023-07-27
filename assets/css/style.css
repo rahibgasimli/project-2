@@ -169,13 +169,30 @@ header .fa-bars{
 }
 
 .teqdimat-left button{
-    padding: 15px 30px;
+    width: 165px;
+    height: 50px;
     background-color: #3A68B8;
     border-color: #3A68B8;
     border-radius: 5px;
     color: white;
     font-size: 16px;
     margin-top: 50px;
+}
+
+.teqdimat-left button img {
+    margin-right: 5px;
+}
+
+.teqdimat-left .button-group{
+    display: flex;
+    align-items: center;
+}
+
+.teqdimat-left button:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
 }
 
 .teqdimat-right img{
@@ -190,6 +207,31 @@ header .fa-bars{
     margin-left: 50px;
 }
 
+
+
+@media(max-width:768px){
+    
+    .teqdimat-left{
+        padding: 0;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    .teqdimat-left h1{
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    .teqdimat-left p{
+        font-size: 17px;
+    }
+
+    .teqdimat-left button{
+        padding: 10px 20px;
+        margin-bottom: 0px;
+    }
+}
+
 @media(max-width:576px){
     .teqdimat{
         flex-direction: column;
@@ -199,7 +241,6 @@ header .fa-bars{
     .teqdimat-left{
         padding: 0;
         width: 100%;
-    
     }
 
     .teqdimat-left h6{
@@ -220,39 +261,13 @@ header .fa-bars{
         line-height: 120%;
     }
 
-    .teqdimat-left .get-started{
-        margin-left: 30px;
-        height: 60px;
-    }
-
     .teqdimat-right{
         display: none;
     }
-}
 
-@media(max-width:768px){
-    .teqdimat-left{
-        padding: 0;
-        padding-left: 50px;
-        padding-top: 30px;
+    .teqdimat-left .button-group{
+        padding-left: 25px;
     }
-
-    .teqdimat-left h1{
-        font-size: 35px;
-        padding-bottom: 20px;
-    }
-
-    .teqdimat-left p{
-        font-size: 17px;
-    }
-
-    .teqdimat-left button{
-        padding: 10px 20px;
-        margin-bottom: 60px;
-    }
-
-
-
 }
 
 
@@ -328,6 +343,28 @@ background-color:#08101D;
     font-weight: 100;
 }
 
+@media(max-width:768px){
+
+.apply-left{
+    margin: 0;
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.apply-right{
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.apply-right h3{
+    padding-top: 130px;
+    font-size: 31px;
+}
+
+}
+
 @media(max-width:576px){
     .apply-section{
         flex-direction: column;
@@ -367,8 +404,10 @@ background-color:#08101D;
 
     .apply-right button{
         margin-left: 120px;
-        margin-top: 50px;
-        padding: 25px;
+        margin-top: 50px;   
+        margin-bottom: 50px;
+        width: 150px;
+        height: 50px;
     }
 }
 
@@ -398,7 +437,7 @@ background-color:#08101D;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    padding-left: 110px;
+    display: flex;
 }
 
 .card h4{
@@ -462,6 +501,34 @@ background-color:#08101D;
 }
 
 
+
+@media(max-width:768px){
+    .about-left{
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .about-left h1{
+        font-size: 30px;
+    }
+
+    .about-left p{
+        font-size: 15px;
+        padding-top: 20px;
+        line-height: 120%;
+    }
+
+    .about-right{
+        margin: 0;
+        margin-right: 10px;
+        margin-top: 80px;
+        width: 60%;
+    }
+}
+
+
+
 @media(max-width:576px){
     .about-section{
         flex-direction: column;
@@ -506,7 +573,7 @@ background-color:#08101D;
 }
 
 .all-div a{
-    color: var(--ffffff, #FFF);
+    color: rgba(255, 255, 255,0.8);
     font-size: 14px;
     font-weight: 450;
     text-decoration: none;
@@ -605,6 +672,45 @@ background-color:#08101D;
 .about-div h5 img  {
     padding: 0 5px;
 }
+
+/* @media only screen and (max-width: 600px) and (min-width: 400px)  {...} */
+
+
+@media(max-width:768px) {
+    .logo-div{
+        padding-left: 20px;
+    }
+
+    .all-div h4{
+        font-size: 14px;
+    }
+
+    .all-div a{
+        font-size: 12px;
+    }
+
+    .all-div p{
+        font-size: 10px;
+    }
+
+    .logo-div span{
+        font-size: 13px;
+    }
+
+    .info-div{
+        padding-left: 0px;
+    }
+
+    .about-div{
+        padding-left: 15px;
+    }
+
+    .footer-menu{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 
 @media(max-width:576px){
     .all-div{
